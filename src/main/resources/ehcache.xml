@@ -23,7 +23,7 @@
         </listeners>
 
         <resources>
-            <offheap unit="MB">1000</offheap>
+            <offheap unit="MB">100</offheap>
         </resources>
     </cache>
 
