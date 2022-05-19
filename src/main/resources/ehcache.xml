@@ -5,7 +5,7 @@
             http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd
             http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
     <persistence directory="spring-boot-ehcache/cache" />
-    <cache alias="candles" overflowToDisk="false">
+    <cache alias="candles">
         <key-type>java.lang.String</key-type>
         <value-type>java.util.ArrayList</value-type>
         <expiry>
@@ -21,8 +21,6 @@
                 <events-to-fire-on>EXPIRED</events-to-fire-on>
             </listener>
         </listeners>
-
-
     </cache>
 
 </config>
