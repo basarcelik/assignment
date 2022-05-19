@@ -11,6 +11,7 @@
         <expiry>
             <ttl unit="minutes">1000</ttl>
         </expiry>
+
         <listeners>
             <listener>
                 <class>com.caocity.baraka.assignment.EventLogger</class>
@@ -21,6 +22,9 @@
             </listener>
         </listeners>
 
+        <resources>
+            <offheap unit="MB">10</offheap>
+        </resources>
     </cache>
 
 </config>
